@@ -1,0 +1,182 @@
+/*----variables*/
+
+
+
+:root {
+	--blueish: #808d99;
+	--paleCyan: #ebfbff;
+	--darkCyan: #00252e;
+	--pink: #ff52bf;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: var(--darkCyan);
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+p {
+  color: var(--blueish);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.container.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > div,
+.flex > ul {
+  flex: 1;
+}
+
+.flex.align-start {
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 15px 60px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background-color: var(--pink);
+  color: #fff;
+}
+
+/*===HEADER===*/
+header {
+  background-image: url(/images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--paleCyan);
+  padding: 40px 0;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+header p {
+  color: var(--darkCyan);
+  margin-right: 50px;
+}
+
+.box {
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 30px 0;
+  padding: 50px;
+}
+
+.small-box {
+  display: inline-block;
+  margin-top: 4%;
+  margin-bottom: -70%;
+  position: relative;
+  z-index: 1;
+  padding: 30px 100px;
+}
+
+footer {
+  background-color: var(--darkCyan);
+  color: var(--blueish);
+  padding: 140px 0 60px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer .circle {
+	border-style: solid;
+	border-radius: 50%;
+	border-width: thin;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 8px 0 0 0;
+	margin-left: 10px;
+	
+}
+
+footer img {
+  margin-left: 35px;
+}
+
+footer .flex .included-icons{
+ flex-basis: 250px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blueish);
+}
+
+.copyright-attribution {
+	justify-content: space-between;
+	font-size: 0.8rem;
+	margin-left: 35px;
+}
+
+.attribution a {
+	color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
